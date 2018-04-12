@@ -1,0 +1,124 @@
+h1
+{
+	color:royalblue;
+}
+body
+{
+	background-color:#fdfdfd;
+	padding-left:35px;
+	padding-right:35px;
+	border:3px solid gray;
+}
+hr
+{
+	margin:40px;
+	border:3px solid lightgray;
+}
+#image
+{
+	float:right;
+	height:300px;
+	width:300px;
+	margin-right:10%;
+	margin-top:4%;
+	opacity:1;
+	display:none;
+}
+#image:hover
+{
+	opacity:0.8;
+}
+#namezod
+{
+	position:absolute;
+	color:orange;
+	margin-top:3%;
+	height:100px;
+	width:200px;
+	text-align:center;
+	font-size:40px;
+	font-family: 'Pacifico', cursive;
+	letter-spacing:10px;
+
+}
+#namezod:hover
+{
+	color:red;
+}
+#about
+{
+	font-family: 'Bree Serif', serif;
+	font-size:25px;
+	float:right;
+	height:350px;
+	width:400px;
+	margin-right:10%;
+	margin-top:1%;
+}
+#about:hover
+{
+	font-family: 'Bree Serif', serif;
+	font-size:26px;
+	float:right;
+	height:350px;
+	width:400px;
+	margin-right:10%;
+	margin-top:1%;
+}
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 25px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 45px 300px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+	border-radius:50px;
+}
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+#textbox1
+{
+	padding:10px;
+	width:15%;
+	height:5%;
+	border-radius:4px;
+	font-size:20px;
+}
+#day
+{
+	padding:10px;
+	width:8%;
+	height:5%;
+	border-radius:4px;
+	font-size:20px;
+}
+#month
+{
+	padding:10px;
+	width:8%;
+	height:5%;
+	border-radius:4px;
+	font-size:20px;
+}
+#textbox2
+{
+	padding:10px;
+	width:15%;
+	height:5%;
+	border-radius:4px;
+	font-size:20px;	
+}

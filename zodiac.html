@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href="style3.css" rel="stylesheet"/>
+		<script>
+			function foo()
+			{
+			name=textbox1.value;
+			vd=eval(day.value);
+			vm=eval(month.value);
+			var zodiac;
+			if((vd>=20&&vm==1)||(vd<=18&&vm==2))
+			{
+			zodiac="Aquarius";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='aquarius.png'/>";
+			}
+			else if((vd>=19&&vm==2)||(vd<=20&&vm==3))
+			{
+			zodiac="Pisces";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='pisces.png'/>";
+			}
+			else if((vd>=21&&vm==3)||(vd<=19&&vm==4))
+			{
+			zodiac="Aries";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='aries.png'/>";
+			}
+			else if((vd>=20&&vm==4)||(vd<=20&&vm==5))
+			{
+			zodiac="Taurus";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='taurus.png'/>";
+			}
+			else if((vd>=21&&vm==5)||(vd<=20&&vm==6))
+			{
+			zodiac="Gemini";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='gemini.png'/>";
+			}
+			else if((vd>=21&&vm==6)||(vd<=22&&vm==7))
+			{
+			zodiac="Cancer";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='cancer.png'/>";
+			}
+			else if((vd>=23&&vm==7)||(vd<=22&&vm==8))
+			{
+			zodiac="Leo";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='leo.png'/>";
+			}
+			else if((vd>=23&&vm==8)||(vd<=22&&vm==9))
+			{
+			zodiac="Virgo";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='virgo.png'/>";
+			}
+			else if((vd>=23&&vm==9)||(vd<=22&&vm==10))
+			{
+			zodiac="Libra";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='libra.png'/>";
+			}
+			else if((vd>=23&&vm==10)||(vd<=21&&vm==11))
+			{
+			zodiac="scorpio";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='scorpio.png'/>";
+			}
+			else if((vd>=22&&vm==11)||(vd<=21&&vm==12))
+			{
+			zodiac="Sagittarius";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='sagittarius.png'/>";
+			}
+			else if((vd>=22&&vm==12)||(vd<=19&&vm==1))
+			{
+			zodiac="Capricorn";
+			image.innerHTML="<img style='height:200px;width:200px;border-radius:50%;' src='capricorn.png'/>";
+			}
+			alert("Hi! "+name+" your Zodiac is "+zodiac);
+			
+			}
+		</script>
+	</head>
+	<body>
+		</br>
+		<h1 style="text-align:center;font-family: 'Pacifico', cursive;letter-spacing:10px;">ZODIAC FINDER</h1>
+		<hr/>
+		</br>
+		</br>
+		</br>
+		<div id="about">
+		</div>
+		<div id="image">
+		</div>
+		
+		<p style="font-size:25;">Enter your Name: &nbsp
+		<input type="text" id="textbox1"/>
+		</br>
+		</br>
+		</br>
+		Enter Day: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<select id="day">
+			<option>-day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+			<option value="13">13</option>
+			<option value="14">14</option>
+			<option value="15">15</option>
+			<option value="16">16</option>
+			<option value="17">17</option>
+			<option value="18">18</option>
+			<option value="19">19</option>
+			<option value="20">20</option>
+			<option value="21">21</option>
+			<option value="22">22</option>
+			<option value="23">23</option>
+			<option value="24">24</option>
+			<option value="25">25</option>
+			<option value="26">26</option>
+			<option value="27">27</option>
+			<option value="28">28</option>
+			<option value="29">29</option>
+			<option value="30">30</option>
+			<option value="31">31</option>
+		</select>
+		</br>
+		</br>
+		</br>
+		Enter Month: &nbsp &nbsp &nbsp &nbsp &nbsp 
+		<select id="month">
+			<option>-month</option>
+			<option value="1">Jan</option>
+			<option value="2">Feb</option>
+			<option value="3">Mar</option>
+			<option value="4">Apr</option>
+			<option value="5">May</option>
+			<option value="6">Jun</option>
+			<option value="7">Jul</option>
+			<option value="8">Aug</option>
+			<option value="9">Sept</option>
+			<option value="10">Oct</option>
+			<option value="11">Nov</option>
+			<option value="12">Dec</option>
+		</select>
+		</br>
+		</br>
+		<input class="button button2" type="button" value="FIND" onclick="foo()"/>
+		</p>
+	</body>
+</html>

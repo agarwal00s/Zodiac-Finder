@@ -1,0 +1,148 @@
+<html>
+	<head>
+		<script src="jquery.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link href="style3.css" rel="stylesheet"/>
+		<script>
+			function foo()
+			{
+			if(textbox1.value=="")
+			err.innerHTML="name required";
+			else
+			{
+			err.innerHTML="";
+			name=textbox1.value;
+			re=textbox2.value;
+			vm=eval(re.substr(5,2));
+			vd=eval(re.substr(8,2));
+			var zodiac;
+			if((vd>=20&&vm==1)||(vd<=18&&vm==2))
+			{
+			zodiac="Aquarius";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='aquarius.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Progressive, original, independent, humanitarian</br><b>Weaknesses:</b> Runs from emotional expression, temperamental, uncompromising, aloof</br><b>Aquarius likes:</b> Fun with friends, helping others, fighting for causes, intellectual conversation, a good listener</br><b>Aquarius dislikes:</b> Limitations, broken promises, being lonely, dull or boring situations, people who disagree with them";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=19&&vm==2)||(vd<=20&&vm==3))
+			{
+			zodiac="Pisces";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='pisces.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Compassionate, artistic, intuitive, gentle, wise, musical</br><b>Weaknesses:</b> Fearful, overly trusting, sad, desire to escape reality, can be a victim or a martyr</br><b>Pisces likes:</b> Being alone, sleeping, music, romance, visual media, swimming, spiritual themes</br><b>Pisces dislikes:</b> Know-it-all, being criticized, the past coming back to haunt, cruelty of any kind";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=21&&vm==3)||(vd<=19&&vm==4))
+			{
+			zodiac="Aries";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='aries.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Courageous, determined, confident, enthusiastic, optimistic, honest, passionate </br> <b>Weaknesses:</b> Impatient, moody, short-tempered, impulsive, aggressive </br> <b>Aries likes:</b> Comfortable clothes, taking on leadership roles, physical challenges, individual sports </br><b> Aries dislikes: </b>Inactivity, delays, work that does not use one's talents";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=20&&vm==4)||(vd<=20&&vm==5))
+			{
+			zodiac="Taurus";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='taurus.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Reliable, patient, practical, devoted, responsible, stable</br><b>Weaknesses:</b> Stubborn, possessive, uncompromising</br><b>Taurus likes:</b> Gardening, cooking, music, romance, high quality clothes, working with hands</br><b>Taurus dislikes:</b> Sudden changes, complications, insecurity of any kind, synthetic fabrics";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=21&&vm==5)||(vd<=20&&vm==6))
+			{
+			zodiac="Gemini";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='gemini.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Gentle, affectionate, curious, adaptable, ability to learn quickly and exchange ideas</br><b>Weaknesses:</b> Nervous, inconsistent, indecisive</br><b>Gemini likes:</b> Music, books, magazines, chats with nearly anyone, short trips around the town</br><b>Gemini dislikes:</b> Being alone, being confined, repetition and routine</br>";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=21&&vm==6)||(vd<=22&&vm==7))
+			{
+			zodiac="Cancer";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='cancer.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Tenacious, highly imaginative, loyal, emotional, sympathetic, persuasive</br><b>Weaknesses:</b> Moody, pessimistic, suspicious, manipulative, insecure</br><b>Cancer likes:</b> Art, home-based hobbies, relaxing near or in water, helping loved ones, a good meal with friends</br><b>Cancer dislikes:</b> Strangers, any criticism of Mom, revealing of personal life";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			
+			}
+			else if((vd>=23&&vm==7)||(vd<=22&&vm==8))
+			{
+			zodiac="Leo";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='leo.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Creative, passionate, generous, warm-hearted, cheerful, humorous</br><b>Weaknesses:</b> Arrogant, stubborn, self-centered, lazy, inflexible</br><b>Leo likes:</b> Theater, taking holidays, being admired, expensive things, bright colors, fun with friends</br><b>Leo dislikes:</b> Being ignored, facing difficult reality, not being treated like a king or queen";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=23&&vm==8)||(vd<=22&&vm==9))
+			{
+			zodiac="Virgo";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='virgo.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Loyal, analytical, kind, hardworking, practical</br><b>Weaknesses:</b> Shyness, worry, overly critical of self and others, all work and no play</br><b>Virgo likes:</b> Animals, healthy food, books, nature, cleanliness</br><b>Virgo dislikes:</b> Rudeness, asking for help, taking center stage";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=23&&vm==9)||(vd<=22&&vm==10))
+			{
+			zodiac="Libra";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='libra.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Cooperative,diplomatic, gracious, fair-minded, social</br><b>Weaknesses:</b> Indecisive, avoids confrontations, will carry a grudge, self-pity</br><b>Libra likes:</b> Harmony, gentleness, sharing with others, the outdoors</br><b>Libra dislikes:</b> Violence, injustice, loudmouths, conformity";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=23&&vm==10)||(vd<=21&&vm==11))
+			{
+			zodiac="scorpio";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='scorpio.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Resourceful, brave, passionate, stubborn, a true friend</br><b>Weaknesses:</b> Distrusting, jealous, secretive, violent</br><b>Scorpio likes:</b> Truth, facts, being right, longtime friends, teasing, a grand passion</br><b>Scorpio dislikes:</b> Dishonesty, revealing secrets, passive people";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=22&&vm==11)||(vd<=21&&vm==12))
+			{
+			zodiac="Sagittarius";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='sagittarius.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Generous, idealistic, great sense of humor</br><b>Weaknesses:</b> Promises more than can deliver, very impatient, will say anything no matter how undiplomatic</br><b>Sagittarius likes:</b> Freedom, travel, philosophy, being outdoors</br><b>Sagittarius dislikes:</b> Clingy people, being constrained, off-the-wall theories, details";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			else if((vd>=22&&vm==12)||(vd<=19&&vm==1))
+			{
+			zodiac="Capricorn";
+			$("#image").fadeIn(2000);
+			image.innerHTML="<img style='height:300px;width:300px;' src='capricorn.png'/>";
+			about.innerHTML="Hi! <b>"+textbox1.value+"</b></br></br><b>Strengths:</b> Responsible, disciplined, self-control, good managers</br><b>Weaknesses:</b> Know-it-all, unforgiving, condescending, expecting the worst</br><b>Capricorn likes:</b> Family, tradition, music, understated status, quality craftsmanship</br><b>Capricorn dislikes:</b> Almost everything at some point";
+			$( "#namezod" ).animate({ "left": "44%" }, "slow" );
+			}
+			namezod.innerHTML=zodiac;
+			}
+			}
+		</script>
+	</head>
+	<body>
+		</br>
+		<h1 style="text-align:center;font-family: 'Pacifico', cursive;letter-spacing:10px;">ZODIAC FINDER</h1>
+		<hr/>
+		</br>
+		</br>
+		</br>
+		<div id="about">
+		</div>
+		<div id="image">
+		</div>
+		
+		
+		<p style="font-size:25;font-family: 'Bree Serif', serif;">Enter your Name: &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="text" id="textbox1"/>
+		<span style="font-size:25;color:red" id="err">&nbsp *</span> 
+		</br>
+		</br>
+		</br>
+		Enter Date of Birth: &nbsp &nbsp &nbsp  
+		<input type="date" id="textbox2"/>
+		<input class="button button2" type="button" value="FIND" onclick="foo()"/>
+		</p>
+		<div id="namezod">
+		</div>
+	</body>
+</html>
